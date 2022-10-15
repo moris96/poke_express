@@ -12,13 +12,13 @@ class Index extends React.Component {
                             const {name, type, _id} = pokemon 
                             return(
                                 <li key={_id}>
-                                    <a href={`/pokemon/${_id}`}>
-                                        {name}</a> is {type}
+                                    <a href={`/pokemon/${_id}`}><br/>
+                                        {name}</a><p> is a {type} type</p>
 
                                         <br/>
                                       
                                         <form method="POST" action={`/pokemon/${_id}?_method=DELETE`}>
-                                            <input type="submit" value={`Delete ${type} ${name}`}/>
+                                            <input type="submit" value={`Delete ${name}`}/>
                                         </form>
                                 </li>
                             )
