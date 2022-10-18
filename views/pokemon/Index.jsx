@@ -6,6 +6,7 @@ class Index extends React.Component {
         const {pokemons} = this.props
         return(
             <Default title="Pokemon Index Page">
+                <a href="/">click to return to OG Index Page</a>
                 <ul>
                     {
                         pokemons.map((pokemon) => {
@@ -21,10 +22,12 @@ class Index extends React.Component {
                                             <input type="submit" value={`Delete ${name}`}/>
                                         </form>
                                 </li>
+ 
                             )
                         })
                     }
                 </ul>
+                
             </Default>
         )
     }
