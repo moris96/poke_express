@@ -1,17 +1,29 @@
+@import url('http://fonts.cdnfonts.com/css/blade-runner-movie-font');
+
 body {
     background: url(https://wallpaperaccess.com/full/51019.jpg);
     margin: 0;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Blade Runner Movie Font', sans-serif;
 }
   
 h1 {
-    font-family: 'Righteous', cursive;
-    background: antiquewhite;
+    color: whitesmoke;
     margin:0;
     margin-bottom: .5em;
     padding: 1em;
     text-align: center;
 }
+
+h1:hover {
+    color: blue;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+  }
   
 a {
     color: black;
@@ -39,6 +51,7 @@ li a {
   
 input[type=text] {
     padding: .3em;
+    font-family: 'Blade Runner Movie Font', sans-serif;
 }
   
 input[type=submit] {
@@ -47,9 +60,15 @@ input[type=submit] {
     background: mediumseagreen;
     font-size: 1em;
     border-radius: 10%;
+    font-family: 'Blade Runner Movie Font', sans-serif;
 }
 
 p {
-    color: white;
+    color: whitesmoke;
+    /* background: whitesmoke; */
     font-weight: bold;
+}
+
+p:hover {
+    color: blue;
 }
